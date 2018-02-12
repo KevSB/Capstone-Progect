@@ -1,0 +1,234 @@
+html,
+body{
+  font-size: 16px;
+  font-family: helvetica, sans-serif;
+}
+
+/*  Header Section  */
+
+header {
+  position fixed;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  font-size: 2rem;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+
+.logo img {
+  height: 3.6rem;
+}
+
+.academy {
+  color: gray;
+  font-weight: normal;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+ul .space {
+  background-color: darkturquoise;
+  width: 1rem;
+  height: 4rem;
+}
+
+/*  Banner Section  */
+
+.banner {
+  display: flex;
+  background-color: lightgray;
+  padding: 2rem 1.5rem;
+}
+
+.image-banner {
+  width: 60%;
+  height: auto;
+}
+
+.banner-content {
+  display flex;
+  flex-direction column;
+  align-items center;
+  width: 31.4rem;
+  padding-left: 1.5rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.banner h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/*  Information Section  */
+
+.information {
+  display: flex;
+  background-color: #F2F2F2;
+}
+
+.main-info {
+  width: 60%;
+  padding: 2rem 1.5rem;
+
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.86rem;
+}
+
+.about {
+  display: flex;
+}
+
+.about-info {
+  border-left: solid 1px lightgray;
+  padding-top: 1rem;
+}
+
+.image-about {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.orientation {
+  border-bottom: solid 1px lightgray;
+  margin-bottom: 2px;
+}
+
+.campus {
+  border-top: solid 1px lightgray;
+  margin-top: 2px;
+}
+
+.guest {
+  background-color: lightgray;
+}
+
+.about h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.about a {
+  font-size: 1.86rem;
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+/*  Course  Section  */
+
+.learning {
+  background-color: gainsboro;
+}
+
+h2 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 4.5rem;
+}
+
+.course {
+  max-width: 33.25rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+.course h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+/*  Thesis Exhibit Section  */
+
+.thesis {
+  background-color: #F2F2F2;
+  border-bottom: solid 1px lightgray;
+}
+
+.thesis-info {
+  display: flex;
+}
+
+.video {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.thesis h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.study {
+  width: 40%;
+  padding-top: 2rem;
+}
+
+.design {
+  background-color: lightgray;
+}
+
+.news {
+  display: flex;
+  padding: 2rem 2rem;
+}
+
+/* Footor  */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  height: 5rem;
+  padding: 1.5rem 1rem 0 1.5rem;
+}
+
+footer a {
+  font-size: 1.86rem;
+  text-decoration: none;
+  padding: .5rem;
+}
