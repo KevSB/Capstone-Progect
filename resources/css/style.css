@@ -31,7 +31,7 @@ header {
   position fixed;
 }
 
-header .container {
+.container {
   display: flex;
   justify-content: space-between;
   height: 4rem;
@@ -46,8 +46,8 @@ header .container {
   margin-left: 1.5rem;
 }
 
-.logo img {
-  height: 3.6rem;
+header img {
+  height: 4.6rem;
 }
 
 .academy {
@@ -71,6 +71,24 @@ ul .space {
   height: 4rem;
 }
 
+@media only screen and (max-width: 996px) {
+  .logo h3, nav {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo img {
+    height: 2.5rem;
+  }
+
+}
+
 /*  Banner Section  */
 
 .banner {
@@ -90,7 +108,7 @@ img {
 .banner-content {
   width: 34.5rem;
   padding-left: 5rem;
-  line-height: 1.25;
+  line-height: 1.15;
   margin: auto 0;
 }
 
@@ -113,6 +131,52 @@ h1 {
   margin-top: 4rem;
 }
 
+@media only screen and (max-width: 996px) {
+  .banner {
+    display: block;
+    padding: 1rem;
+  }
+
+  .image-banner {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .banner-content {
+    width: 100%;
+    padding-left: 2rem;
+    line-height: 1.15;
+    margin: auto 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    padding: 0;
+  }
+
+  .banner-content {
+    width: 90%;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .banner h3 {
+    font-size: 2rem;
+  }
+
+  .button {
+    background-color: #A4A4A4;
+    width: 90%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
 /*  Information Section  */
 
 .information {
@@ -196,6 +260,54 @@ p {
   color: cornflowerblue;
 }
 
+@media only screen and (min-width: 471px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-info,
+  .bigger {
+    display: none;
+  }
+
+  .about-info {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .about-img {
+    width: auto;
+    margin-bottom: 2rem;
+  }
+
+  .about-content {
+    width: 100%;
+    padding: .5rem;
+    height: auto;
+  }
+
+  .about p {
+    font-size: 1.4rem;
+  }
+
+  .orientation,
+  .campus {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .guest {
+    background-color: #F2F2F2;
+  }
+
+}
+
 /*  Course  Section  */
 
 .learning {
@@ -203,7 +315,7 @@ p {
 }
 
 .learning h2 {
-  padding-top: 2rem;
+  padding-top: 3.5rem;
   text-align: center;
 }
 
@@ -211,7 +323,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 2rem 4.5rem;
+  padding: 2.5rem 4.5rem 5rem 4.5rem;
 }
 
 .course {
@@ -234,6 +346,29 @@ p {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 470px) {
+  .courses {
+    display: block;
+    width: 100%;
+    padding: 2rem 0rem;
+  }
+
+  .course img,
+  .course p {
+    display: none;
+  }
+
+  .learning-content {
+    height: auto;
+    margin: 0;
+  }
+
+  .course h3 {
+    padding: 3rem 1rem;
+    background-color: darkgray;
+  }
+
+}
 /*  Thesis Exhibit Section  */
 
 .thesis {
@@ -247,17 +382,26 @@ p {
 
 .video {
   width: 60%;
-  padding: 2rem 1.5rem;
+  padding: 3.5rem 3rem;
+}
+
+.video h3 {
+  padding-top: 2rem;
 }
 
 .thesis h2 {
-  padding-top: 2rem;
+  padding-top: 3.5rem;
   text-align: center;
 }
 
 .thesis h3 {
   font-size: 2.3rem;
   font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.thesis p {
+  font-size: 1.6rem;
 }
 
 .study {
@@ -265,13 +409,43 @@ p {
   padding-top: 2rem;
 }
 
+.study-img {
+  width: 35%;
+}
+
+.study-content {
+  width: 60%;
+  padding-left: 2rem;
+  margin: auto 0;
+}
+
 .design {
   background-color: lightgray;
+  margin-top: 1.5rem;
+  line-height: 3rem;
 }
 
 .news {
   display: flex;
   padding: 2rem 2rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .thesis {
+    border: none;
+  }
+
+  .thesis-info h3,
+  .thesis-info p,
+  .study {
+    display: none;
+  }
+
+  .video {
+    width: 100%;
+    padding: 3.5rem 1rem;
+  }
+
 }
 
 /* Footor  */
@@ -284,8 +458,26 @@ footer {
   padding: 1.5rem 1rem 0 1.5rem;
 }
 
+footer p, a {
+  font-size: 1.5rem;
+}
+
 footer a {
-  font-size: 1.86rem;
   text-decoration: none;
   padding: .5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    padding-top: 0;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+
+  footer a {
+    display: none;
+  }
+
 }
