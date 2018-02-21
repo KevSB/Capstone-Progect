@@ -58,7 +58,7 @@ header {
 
 nav a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 ul {
@@ -83,12 +83,19 @@ ul .space {
   }
 
   .logo {
-    margin-left: 1rem;
+    margin-left: .5rem;
   }
 
   ul {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
+
+  .big {
+    width: 3rem;
+    padding-top: .2rem;
+  }
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -120,7 +127,7 @@ ul .space {
     display: none;
   }
 
-  .logo img {
+  .logo img, {
     height: 2.5rem;
     padding: 0;
   }
@@ -134,9 +141,7 @@ ul .space {
 .banner {
   display: flex;
   background-color: #d3d3d3;
-  padding 3.5rem 3rem;
   padding: 8.5rem 3rem 3.5rem 3rem;
-  position: static;
 }
 
 .image-banner {
